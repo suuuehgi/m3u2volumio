@@ -63,7 +63,7 @@ $ m3u2volumio example3.m3u
 [{"service":"mpd","title":"Sample title","artist":"Sample artist","uri":"Sample.mp3"},{"service":"mpd","title":"Example title","artist":"Example Artist","uri":"Greatest Hits\Example.ogg"}]
 ```
 
-Create new file `/data/playlist/playlistname` and copy the output there or directly doint:
+Create new file `/data/playlist/playlistname` and copy the output there or directly doing:
 
 ```
 m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat >> /data/playlist/newplaylistname'
