@@ -70,7 +70,7 @@ $ m3u2volumio example3.m3u
 Create new file `/data/playlist/playlistname` and copy the output there or directly by typing:
 
 ```
-m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat >> /data/playlist/newplaylistname'
+m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat > /data/playlist/newplaylistname'
 ```
 
 [**Example 4**](https://en.wikipedia.org/wiki/M3U#Examples)
