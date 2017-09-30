@@ -74,6 +74,7 @@ m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat > /data/playlist/new
 ```
 
 [**Example 4**](https://en.wikipedia.org/wiki/M3U#Examples)
+*Bad formatting! Just a technical example!*
 
 ```
 Alternative\Band - Song.mp3
