@@ -1,6 +1,10 @@
 # m3u2volumio
 Translate .m3u files into a volumio conform playlist. The intervention requires SSH.
 
+# Dependencies
+
+* `python3 >= 3.1`
+
 # Usage
 ./m3u2volumio <filename.m3u>
 
