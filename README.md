@@ -74,14 +74,15 @@ m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat > /data/playlist/new
 ```
 
 [**Example 4**](https://en.wikipedia.org/wiki/M3U#Examples)
-*Bad formatting! Just a technical example!*
+
+*Bad formatting! Just a technical example! Use absolute paths!*
 
 ```
-Alternative\Band - Song.mp3
-Classical\Other Band - New Song.mp3
+Alternative/Band - Song.mp3
+Classical/Other Band - New Song.mp3
 Stuff.mp3
-D:\More Music\Foo.mp3
-..\Other Music\Bar.mp3
+D:/More Music/Foo.mp3
+../Other Music/Bar.mp3
 http://emp.cx:8000/Listen.pls
 http://www.example.com/~user/Mine.mp3
 ```
