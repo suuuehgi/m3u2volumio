@@ -1,5 +1,5 @@
 # m3u2volumio
-Translate .m3u files into a volumio conform playlist. The intervention requires SSH.
+Translate .[m3u](https://en.wikipedia.org/wiki/M3U#Extended_M3U) files into a volumio conform playlist. The intervention requires SSH.
 
 # Version
 0.2
