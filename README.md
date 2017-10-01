@@ -1,16 +1,26 @@
 # m3u2volumio
 Translate .m3u files into a volumio conform playlist. The intervention requires SSH.
 
-# Dependencies
+# Version
+0.2
 
+# Dependencies
 * `python3 >= 3.1`
 
 # Usage
-./m3u2volumio <filename.m3u>
+`./m3u2volumio <filename.m3u>`
 
-Personal playlists lie in `/data/playlist/`.
+```
+-c, --changelog
+-h, --help
+-v, --version
+```
 
-The playlist *My Web Radios* is located at `/data/favourites/my-web-radio`.
+Custom playlists are located in:
+
+* `/data/playlist` (custom playlists)
+* `/data/favourites/my-web-radio` (*My Web Radios*)
+* `/data/favourites/radio-favourites` (*Favorite Radios*)
 
 # Assumptions
 
@@ -70,7 +80,7 @@ $ m3u2volumio example3.m3u
 Create new file `/data/playlist/playlistname` and copy the output there or directly by typing:
 
 ```
-m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat > /data/playlist/newplaylistname'
+$ m3u2volumio filename.m3u | ssh volumio@volumiocomputer 'cat > /data/playlist/newplaylistname'
 ```
 
 [**Example 4**](https://en.wikipedia.org/wiki/M3U#Examples)
