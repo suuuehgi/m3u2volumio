@@ -8,8 +8,8 @@ Translate .[m3u](https://en.wikipedia.org/wiki/M3U#Extended_M3U) files into a [V
 * `python3 >= 3.1`
 
 # Usage
-`./m3u2volumio <filename.m3u>`
-
+Standard m3u playlist: `./m3u2volumio <filename.m3u>`
+iTunes m3u playlist: `./m3u2volumio <filename.m3u> itunes`
 ```
 -c, --changelog
 -h, --help

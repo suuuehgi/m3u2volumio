@@ -98,8 +98,8 @@ if __name__ == "__main__":
             print(key,"\t",changelog[key])
         sys.exit(0)
 
-    if not len(sys.argv) == 2:
-        raise ValueError('Wront number of arguments!\nUsage: {} <filename.m3u>'.format(sys.argv[0]))
+    if not len(sys.argv) < 4:
+        raise ValueError('Wrong number of arguments!\nUsage: {} <filename.m3u>'.format(sys.argv[0]))
 
     elif not os.path.isfile(sys.argv[1]):
         raise ValueError('File {} not found!'.format(sys.argv[1]))
@@ -132,8 +132,12 @@ if __name__ == "__main__":
 
         else:
             if '-' in key and key.count('-') == 1:
-                artist = key.split('-')[0].strip()
-                title = key.split('-')[1].strip()
+                if len(sys.argv) >2 and (sys.argv[2]).lower() == 'itunes':
+                    artist = key.split('-')[1].strip()
+                    title = key.split('-')[0].strip()
+                else:
+                  artist = key.split('-')[0].strip()
+                  title = key.split('-')[1].strip()
 
                 # Assuming file extention: Removing it
                 title_temp = '.'.join(title.split('.')[:-1])
